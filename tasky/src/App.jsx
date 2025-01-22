@@ -5,10 +5,8 @@ function App() {
   return (
     <div className="container">
       <h1>Tasky</h1>
-      <Task title="Dishes" deadline="Today" />
-      <Task title="Laundry" deadline="Tomorrow">
-        Fold laundry and put away
-      </Task>
+      <Task title="Dishes" deadline="Today" description="Empty dishwasher" />
+      <Task title="Laundry" deadline="Tomorrow" description="Fold laundry and put away" />
       <Task title="Tidy" deadline="Today" />
     </div>
   );
