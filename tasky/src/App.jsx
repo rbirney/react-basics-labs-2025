@@ -1,5 +1,6 @@
 import './App.css';
 import Task from './components/Task';
+import AddTaskForm from './components/Form';
 import React, { useState } from 'react';
 
 
@@ -37,11 +38,12 @@ function App() {
           deadline={task.deadline}
           key={task.id}
           done={task.done}
+          priority={task.priority}
           markDone={() => doneHandler(index)}
           deleteTask = {() => deleteHandler(index)}
         />
       ))}
-
+      <AddTaskForm />
     </div>
   );
 }
